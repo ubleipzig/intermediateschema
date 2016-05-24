@@ -10,7 +10,7 @@
         "rft.genre",
         "ris.type"
     ],
-    "additionalProperties":false,
+    "additionalProperties":true,
     "properties":{
         "abstract":{
             "type":"string"
