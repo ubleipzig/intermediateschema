@@ -31,3 +31,7 @@ To run validation against a schema, use one of the many validators available. He
 
     $ jsonschema -i fixtures/0.9/jats.is is-0.9.json
 
+----
+
+To validate the schema itself, use e.g. http://jsonschemalint.com.
+
