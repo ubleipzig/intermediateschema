@@ -3,6 +3,8 @@ Notes for Version 1.0
 
 Version 1.0 should have a clearer description.
 
+This is WIP.
+
 Fields
 ======
 
@@ -15,24 +17,25 @@ Mandatory. Contains a unique identifier. Should be of the form
 group-pool-id
 ```
 
-Where group would be a processing pool or some arbitrary name. Alphanumeric and
-short, not longer than 8 chars; pool would subsume many ids. An id must be
+Where group would be a processing entity or some arbitrary name. Alphanumeric and
+short, not longer than 8 chars; a pool would subsume many ids. An id must be
 uniq, but only within a pool.
 
-The id must be useable as URL of filename. A base64 URL encoding is suggested, if the IDs of the pool can be anything. 
+The whole string must be useable as URL or filename. A base64 URL encoding is
+suggested, if the IDs of the pool can contain URL unfriendly characters.
 
 Examples:
 
 ```
-finc-99-1115
 ai-89-NzQxMjY4NQ
 dswarm-105-MTAuMTAwNy81MjAuMTQzMy03MzM5
+finc-99-1115
 ```
 
 source
 ------
 
-Name or id of the data source. Often the same as the pool part of the id.
+Name or id of the data source. Often the same as the pool part of the id. Alphanumeric.
 
 format
 ------
@@ -52,6 +55,8 @@ Possible values:
 collection
 ----------
 
+Name of the collection. This value usually appears in a facet.
+
 authors
 -------
 
@@ -67,9 +72,6 @@ languages
 
 A list of languages (three-letter-codes)
 
-
-
-Name of the collection. This is usually displayed as a facet.
 
 RIS related properties (ris)
 ===========================
