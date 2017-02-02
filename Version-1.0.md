@@ -77,6 +77,11 @@ urls
 
 A list of URLs.
 
+version
+-------
+
+Version of the schema.
+
 
 RIS related properties (ris)
 ===========================
