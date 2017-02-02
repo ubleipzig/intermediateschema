@@ -145,6 +145,8 @@ Imaginary documents
     "urls": [
         "http://example.com/120/123.html",
         "http://doi.org/10.1023/12901.292921"
-    ]
+    ],
+    "subjects": ["History", "Databases", "],
+    "version": "1.0"
 }
 ```
