@@ -72,6 +72,11 @@ languages
 
 A list of languages (three-letter-codes)
 
+urls
+----
+
+A list of URLs.
+
 
 RIS related properties (ris)
 ===========================
@@ -104,7 +109,7 @@ Other properties (x)
 * subjects []
 * type
 * fulltext
-* packages [] (additional, source-dependent package identifiers)
+* tags [] (additional, source-dependent package identifiers)
 * isils [] (explicit local information)
 
 Tooling
@@ -118,3 +123,28 @@ Possible things to do with a single format:
 * licensing (like span-tag)
 * quality checks (graded records: A, B, C)
 * exporters (like span-export, solr, formeta)
+
+Imaginary documents
+===================
+
+```json
+{
+    "id": "abc-120-120912",
+    "doi": "10.1023/12901.292921",
+    "source": "120",
+    "format": "ElectronicArticle",
+    "collection": "The imaginare documents database (IDD)",
+    "languages": ["eng", "deu"],
+    "rft": {
+        "atitle": "An example document",
+        "date": "2000-02-28",
+        "issn": "1281-1213",
+        "pages": "X-XV",
+    },
+    "tags": ["FSI", "my-custom-tag"],
+    "urls": [
+        "http://example.com/120/123.html",
+        "http://doi.org/10.1023/12901.292921"
+    ]
+}
+```
