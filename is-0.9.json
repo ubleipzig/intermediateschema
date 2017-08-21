@@ -7939,7 +7939,10 @@
       "type": "string"
     },
     "finc.mega_collection": {
-      "type": "string"
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
     "finc.record_id": {
       "type": "string"
