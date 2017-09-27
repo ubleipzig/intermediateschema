@@ -35,3 +35,11 @@ To run validation against a schema, use one of the many validators available. He
 
 To validate the schema itself, use e.g. http://jsonschemalint.com.
 
+----
+
+Check all fixtures for conformance to a given version:
+
+```shell
+(export VERSION=0.9; for f in $(find fixtures/$VERSION/*); do jsonschema -i $f is-$VERSION.json; done)
+```
+
