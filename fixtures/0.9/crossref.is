@@ -1,7 +1,7 @@
 {
   "finc.format": "ElectronicArticle",
-  "finc.mega_collection": "Nature Publishing Group (CrossRef)",
-  "finc.record_id": "ai-49-aHR0cDovL2R4LmRvaS5vcmcvMTAuMTAzOC8xOTg1MDZiMA==",
+  "finc.mega_collection": ["Nature Publishing Group (CrossRef)"],
+  "finc.record_id": "ai-49-aHR0cDovL2R4LmRvaS5vcmcvMTAuMTAzOC8xOTg1MDZiMA",
   "finc.source_id": "49",
   "ris.type": "EJOUR",
   "rft.atitle": "Characterization of Pools of Protein in Cells of Shigella flexneri F6S infected with Phage H-Sh",
