@@ -2,6 +2,7 @@
   "type": "object",
   "description": "Intermediate Schema for article metadata.",
   "required": [
+    "finc.id",
     "finc.mega_collection",
     "finc.record_id",
     "finc.source_id",
@@ -7934,6 +7935,9 @@
     "version": {
       "type": "string",
       "pattern": "^[0-9]+.[0-9]+$"
+    },
+    "finc.id": {
+      "type": "string"
     },
     "finc.format": {
       "type": "string"
