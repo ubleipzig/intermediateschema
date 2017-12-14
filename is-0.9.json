@@ -8258,6 +8258,10 @@
     },
     "x.type": {
       "type": "string"
+    },
+    "x.date": {
+      "type": "string",
+      "format": "date-time"
     }
   }
 }
