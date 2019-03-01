@@ -8262,6 +8262,12 @@
     "x.date": {
       "type": "string",
       "format": "date-time"
+    },
+    "x.footnotes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     }
   }
 }
