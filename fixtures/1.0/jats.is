@@ -1,6 +1,6 @@
 {
   "finc.format": "ElectronicArticle",
-  "finc.mega_collection": "DeGruyter SSH",
+  "finc.mega_collection": ["DeGruyter SSH"],
   "finc.record_id": "ai-50-aHR0cDovL2R4LmRvaS5vcmcvMTAuMjIwMi8xOTQzLTM4NjcuMTA4OQ==",
   "finc.source_id": "50",
   "ris.type": "JOUR",

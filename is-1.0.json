@@ -6,9 +6,12 @@
         "finc.record_id",
         "finc.source_id",
         "languages",
-        "rft.atitle",
         "rft.genre",
         "ris.type"
+    ],
+    "anyOf":[
+        {"required":["rft.atitle"]},
+        {"required":["rft.btitle"]}
     ],
     "additionalProperties":false,
     "properties":{
@@ -8214,7 +8217,10 @@
             "type":"string"
         },
         "finc.mega_collection":{
-            "type":"string"
+            "type":"array",
+            "items":{
+                "type":"string"
+            }
         },
         "finc.record_id":{
             "type":"string"
@@ -8256,8 +8262,7 @@
             }
         },
         "rft.epage":{
-            "type":"string",
-            "pattern":"^[0-9]*$"
+            "type":"string"
         },
         "rft.genre":{
             "type":"string",
@@ -8295,8 +8300,7 @@
             "type":"string"
         },
         "rft.tpages":{
-            "type":"string",
-            "pattern":"^[0-9]*$"
+            "type":"string"
         },
         "rft.pages":{
             "type":"string"
@@ -8338,8 +8342,7 @@
             "type":"string"
         },
         "rft.spage":{
-            "type":"string",
-            "pattern":"^[0-9]*$"
+            "type":"string"
         },
         "rft.volume":{
             "type":"string"
@@ -8430,6 +8433,46 @@
         },
         "x.type":{
             "type":"string"
+        },
+        "finc.id":{
+            "type":"string"
+        },
+        "rft.part":{
+            "type":"string"
+        },
+        "x.date":{
+            "type":"string",
+            "format":"date-time"
+        },
+        "x.indicator":{
+            "type":"string"
+        },
+        "x.packages":{
+            "type":"array",
+            "items":{
+                "type":"string"
+            }
+        },
+        "x.labels":{
+            "type":"array",
+            "items":{
+                "type":"string"
+            }
+        },
+        "x.oa":{
+            "type":"boolean"
+        },
+        "x.license":{
+            "type":"array",
+            "items":{
+                "type":"string"
+            }
+        },
+        "x.footnotes":{
+            "type":"array",
+            "items":{
+                "type":"string"
+            }
         }
     }
 }
